@@ -7,7 +7,7 @@ export class AppController {
 
   @ApiExcludeEndpoint()
   @Get()
-  redirect(@Res() res: any) {
-    return res.redirect('/swagger')
+  async redirect(@Res() resposta: any) {
+    return resposta.redirect('/swagger')
   }
 }
